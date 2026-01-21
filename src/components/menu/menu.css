@@ -1,0 +1,140 @@
+.menu-logo {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -40px;
+  scale: 0.6;
+  cursor: pointer;
+}
+.menu-container {
+  width: 1100px;
+  height: 100px;
+  margin-left: calc(50vw - 550px);
+  display: grid;
+  grid-template-columns: 250px 600px auto;
+}
+.menu-buttons {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+}
+.menu-buttons a {
+  color: white;
+  text-decoration: none;
+  font-family: "bold";
+  font-size: 12pt;
+  cursor: pointer;
+}
+.menu-buttons a:hover {
+  opacity: 1;
+}
+.menu-float {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: auto 600px auto;
+  background-color: #111315e1;
+  backdrop-filter: blur(5px);
+}
+.menu-buttons-float {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+}
+.menu-buttons-float a {
+  color: #39a8e0;
+  text-decoration: none;
+  font-family: "bold";
+  font-size: 12pt;
+  cursor: pointer;
+}
+.menu-buttons-float a:hover {
+  opacity: 1;
+}
+.menu-language {
+  justify-self: center;
+  width: 80px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: end;
+  justify-items: center;
+  font-family: "regular";
+  color: #ffffff;
+  font-size: 12pt;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.menu-language:hover {
+  opacity: 1;
+}
+.menu-language svg {
+  fill: #ffffff;
+}
+.active {
+  opacity: 1;
+}
+.inactive {
+  opacity: 0.5;
+}
+/***************************Mobile**********************************/
+.menu-mobile {
+  width: 100vw;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+}
+.menu-logo-mobile {
+  scale: 0.6;
+}
+.langage-offset-mobile {
+  margin-right: 30vw;
+  margin-top: -11px;
+}
+.menu-icon-mobile {
+  justify-self: center;
+  margin-left: 30px;
+  margin-top: 15px;
+  fill: #ffffff;
+}
+.mobile-menu-container {
+  position: fixed;
+  top: 60px;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background: linear-gradient(#111315, #0d1d2b);
+  z-index: 10;
+  display: grid;
+  grid-auto-rows: 80px;
+}
+.mobile-menu-container a {
+  color: white;
+  text-decoration: none;
+  font-family: "bold";
+  font-size: 16pt;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  .menu-logo {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -80px;
+    scale: 0.5;
+    cursor: pointer;
+  }
+  .menu-container {
+    width: 800px;
+    height: 100px;
+    margin-left: calc(50vw - 400px);
+    display: grid;
+    grid-template-columns: 100px 600px auto;
+  }
+}

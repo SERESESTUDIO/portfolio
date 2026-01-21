@@ -1,0 +1,19 @@
+.body-container {
+  width: 1100px;
+  margin-left: calc(50vw - 550px);
+  height: auto;
+}
+@media screen and (max-width: 1100px) {
+  .body-container {
+    width: 800px;
+    margin-left: calc(50vw - 400px);
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .body-container {
+    width: calc(100vw - 40px);
+    margin-left: 20px;
+    height: auto;
+  }
+}

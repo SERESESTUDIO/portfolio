@@ -1,0 +1,23 @@
+body {
+    background-color: #111315;
+    margin: 0;
+}
+.test {
+    height: 6000px;
+}
+.background-linear-faid {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: linear-gradient(#111315, #0D1D2B);
+    transform: rotate(180deg);
+}
+.space {
+    height: 100px;
+}
+@media screen and (min-width: 800px) {
+    
+}

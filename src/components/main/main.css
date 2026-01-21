@@ -1,0 +1,73 @@
+.main-container {
+  display: grid;
+  justify-items: center;
+  height: calc(100vh - 100px);
+}
+.main-container h1 {
+  color: #ffffff;
+  text-align: center;
+}
+.main-container h6 {
+  color: #39a8e0;
+  margin-top: -15px;
+}
+.main-container a {
+  color: #898989;
+  font-family: "regular";
+  font-size: 12pt;
+  cursor: pointer;
+  text-decoration: none;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.main-front-page {
+  height: 350px;
+}
+.main-front-page svg {
+  width: 394px;
+  height: 346px;
+  align-items: start;
+}
+.down-mark {
+  width: 25px;
+  height: 50px;
+  border-radius: 12.5px;
+  border: 2px solid #ffffff;
+  margin-top: 15px;
+  fill: #39a8e0;
+  display: grid;
+  justify-items: center;
+}
+.down-mark div {
+  align-self: end;
+}
+@media screen and (max-width: 800px) {
+  .main-front-page {
+    height: 250px;
+  }
+  .main-front-page svg {
+    margin-top: 20px;
+    width: 282px;
+    height: 247px;
+    align-items: start;
+  }
+  .main-container h6 {
+    color: #39a8e0;
+    margin-top: -50px;
+  }
+}
+@keyframes bounce {
+  0% {
+    color: #898989;
+    scale: 1;
+  }
+  50% {
+    color: #ffffff;
+    scale: 1.02;
+  }
+  100% {
+    color: #898989;
+    scale: 1;
+  }
+}

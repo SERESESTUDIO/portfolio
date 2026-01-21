@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "bold";
+  src: url("assets/fonts/Century-Gothic-Bold.ttf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("assets/fonts/Century-Gothic-Regular.TTF");
+}
+
+h1 {
+  font-family: "bold";
+  font-size: 28pt;
+  line-height: 28px;
+}
+h2 {
+  font-family: "bold";
+  font-size: 18pt;
+  line-height: 18px;
+}
+h3 {
+  font-family: "bold";
+  font-size: 14pt;
+  line-height: 14px;
+}
+h6 {
+  font-family: "regular";
+  font-size: 10pt;
+  line-height: 10px;
+}
+p {
+  font-family: "regular";
+  font-size: 12pt;
+  line-height: 20px;
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-family: "bold";
+    font-size: 18pt;
+    line-height: 18px;
+  }
+  h6 {
+    font-family: "regular";
+    font-size: 8pt;
+    line-height: 8px;
+  }
+}

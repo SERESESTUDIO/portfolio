@@ -1,0 +1,36 @@
+.language-panel {
+    position: absolute;
+    top: 60px;
+    margin-right: 100px;
+    width: 170px;
+    height: 75px;
+    border: 1px solid #39A8E0;
+    border-radius: 0 0 0 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.language-panel-button-unselected {
+    border: none;
+    font-family: "bold";
+    font-size: 12pt;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #0D1D2B;
+}
+.language-panel-button-unselected:hover {
+    opacity: 0.8;
+}
+.language-panel-button-selected {
+    border: none;
+    font-family: "bold";
+    font-size: 12pt;
+    cursor: pointer;
+    background-color: #39A8E0;
+    color: #ffffff;
+}
+.language-panel-button-selected:hover {
+    opacity: 0.8;
+}
+.menu-panel-rounded {
+    border-radius: 0 0 0 20px;
+}
