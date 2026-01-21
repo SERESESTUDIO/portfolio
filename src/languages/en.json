@@ -8,5 +8,14 @@
     "contact": "CONTACT",
 
     "my-expertise": "My Expertise",
-    "back": "Go back"
+    "back": "Go back",
+
+    "my-work": "My Work",
+    "my-work-description": "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable. ",
+    "filter-by": "Filter by",
+    "all": "All",
+    "web-development": "Web Development",
+    "video-games": "VideoGames",
+    "expiriences": "Experiences",
+    "view-project": "View Project"
 }

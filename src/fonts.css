@@ -39,9 +39,19 @@ p {
     font-size: 18pt;
     line-height: 18px;
   }
+  h3 {
+    font-family: "bold";
+    font-size: 10pt;
+    line-height: 10px;
+  }
   h6 {
     font-family: "regular";
     font-size: 8pt;
     line-height: 8px;
   }
+  p {
+  font-family: "regular";
+  font-size: 10pt;
+  line-height: 20px;
+}
 }
