@@ -1,0 +1,116 @@
+.footer-container {
+  height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+.footer-container h3 {
+  line-height: 20px;
+  text-align: start;
+  margin-top: 0;
+}
+.footer-container label {
+  font-family: "regular";
+  font-size: 10pt;
+}
+.footer-container p {
+  font-family: "regular";
+  font-size: 12pt;
+  color: #898989;
+}
+.footer-summary {
+  background-color: #02060b;
+  color: #ffffff;
+  padding: 40px;
+  z-index: 1;
+}
+.footer-summary:hover {
+  scale: 1.025;
+  z-index: 0;
+}
+.footer-summary-link-container {
+  margin-top: 50px;
+  height: 70px;
+  display: grid;
+}
+.footer-summary-link {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+}
+.footer-summary-link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-summary-link svg {
+  fill: #ffffff;
+  width: 25px;
+  height: 25px;
+}
+.footer-list {
+  background-color: #39a6e0;
+  color: #ffffff;
+  padding: 40px;
+  z-index: 1;
+}
+.footer-list:hover {
+  scale: 1.025;
+  z-index: 0;
+}
+.footer-list-body {
+  height: calc(100% - 60px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-list-body div {
+  display: grid;
+  align-content: start;
+  justify-items: left;
+  gap: 3px;
+  font-family: "regular";
+  font-size: 10pt;
+}
+.footer-contact {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+.footer-phone {
+  background-color: #1a5fbf;
+}
+.footer-location {
+  background-color: #007efc;
+}
+.footer-item-container {
+  padding: 40px;
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+}
+.footer-item-container:hover {
+  scale: 1.025;
+  z-index: 0;
+}
+.footer-item-container svg {
+  fill: #ffffff;
+  height: 100px;
+  width: 100px;
+}
+.footer-item-container label {
+  font-family: "regular";
+  font-size: 12pt;
+}
+@media screen and (max-width: 800px) {
+  .footer-container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
+  }
+}

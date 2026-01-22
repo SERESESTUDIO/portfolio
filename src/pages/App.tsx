@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Menu } from "../components/menu/menu";
 import { useTranslation } from "react-i18next";
 import { Body } from "../components/body/body";
+import { Footer } from "../components/footer/footer";
 
 export const App = ({route=''}) => {
   const {i18n} = useTranslation();
@@ -16,6 +17,7 @@ export const App = ({route=''}) => {
       <div className="background-linear-faid"></div>
       <Menu route={route}/>
       <Body/>
+      <Footer/>
     </div>
   );
 };

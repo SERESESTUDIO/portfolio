@@ -4,6 +4,7 @@ import { App } from "./pages/App";
 import "./languages/i18n";
 import './fonts.css';
 import './main.css';
+import { Project } from "./components/project/project";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path='/work' element={<App route={"work"}/>} />
         <Route path='/experience' element={<App route={"experience"}/>} />
         <Route path='/contact' element={<App route={"contact"}/>} />
+        <Route path='/work/*' element={<Project/>} />
       </Routes>
   </BrowserRouter>
 );

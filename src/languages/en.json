@@ -19,5 +19,15 @@
     "expiriences": "Experiences",
     "view-project": "View Project",
 
-    "proffesional-expirience": "Professional Experience"
+    "proffesional-expirience": "Professional Experience",
+
+    "proffesional-summary": "PROFESSIONAL SUMMARY",
+    "footer-tags": "Full-stack Developer | Videogame Developer",
+    "proffesional-description": "Result-oriented Fullstack Developer & Architect with 4+ years of experience, specialized in interactive 3D web experiences and game development. Proven track record of managing cloud infrastructure (AWS/Digital Ocean) and deploying scalable SaaS applications serving 5,000+ users.",
+    "email": "Email",
+
+    "footer-list-title": "List of programs, languages and techonologies",
+
+    "phone-number": "Phone number",
+    "location": "Location"
 }
