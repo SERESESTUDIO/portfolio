@@ -9,7 +9,7 @@ import { MenuIcon } from '../../icons/menuIcon';
 import { CloseIcon } from '../../icons/closeIcon';
 import './menu.css';
 
-export const Menu = ({route=""}) => {
+export const Menu = ({route="", redirect=false}) => {
   const [openLanguagePanel, setOpenLanguagePanel] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const [actualRoute, setActualRoute] = useState(route);
@@ -44,10 +44,16 @@ export const Menu = ({route=""}) => {
     }
   },[isOnTop]);
   const changeLink = (event:any, link:string)=>{
-    let newRoute = (link === '/') ? "home": link;
-    event.preventDefault();
-    window.history.pushState({}, '', link);
-    setActualRoute(newRoute);
+    if(redirect){
+      const host = window.location.href.split('/')[0];
+      window.location.href = `${host}/${link}`;
+    }
+    else {
+      let newRoute = (link === '/') ? "home": link;
+      event.preventDefault();
+      window.history.pushState({}, '', link);
+      setActualRoute(newRoute);
+    }
   }
   return (
     <>

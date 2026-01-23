@@ -6,7 +6,26 @@ export const sampleProject: IWorkConfig = {
   size: "large",
   id: "TrainAdventure",
   category: { en: "Web-Development", es: "Desarrollo-Web" },
-  tags:["Javascript", "Javascript", "Javascript", "Javascript", "Javascript", "Javascript","Javascript", "Javascript"],
+  tags: [
+    "Javascript",
+    "Javascript",
+    "Javascript",
+    "Javascript",
+    "Javascript",
+    "Javascript",
+    "Javascript",
+    "Javascript",
+  ],
+  officialPages: [
+    {
+      pageName: "Edutech",
+      officialPage: "https://edutechca.com",
+    },
+    {
+      pageName: "TrainMe",
+      officialPage: "https://trainme.education",
+    },
+  ],
   blogs: [
     {
       units: [
@@ -22,17 +41,17 @@ export const sampleProject: IWorkConfig = {
           embedUrl: "",
           imgH: 0,
           paragraph: [
-            { 
-                es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.", 
-                en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable." 
+            {
+              es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
+              en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
             },
-            { 
-                es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency,", 
-                en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency," 
+            {
+              es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency,",
+              en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency,",
             },
-            { 
-                es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.", 
-                en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable." 
+            {
+              es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
+              en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
             },
           ],
         },
@@ -48,12 +67,12 @@ export const sampleProject: IWorkConfig = {
           embedUrl: "",
           imgH: 300,
           paragraph: [
-            { 
-                es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.", 
-                en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable." 
-            }
+            {
+              es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
+              en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
+            },
           ],
-        }
+        },
       ],
     },
     {
@@ -70,12 +89,12 @@ export const sampleProject: IWorkConfig = {
           embedUrl: "",
           imgH: 300,
           paragraph: [
-            { 
-                es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.", 
-                en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable." 
-            }
+            {
+              es: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
+              en: "Technology work involves creating, supporting, and using digital tools, systems, and applications (like AI, software, cloud, cybersecurity, data science) to boost efficiency, enable remote/hybrid work, and solve problems across nearly every industry, offering high demand, varied roles (from coding to analysis), and significant growth, with skills often valued over traditional degrees, making paths like bootcamps viable.",
+            },
           ],
-        }
+        },
       ],
     },
   ],

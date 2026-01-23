@@ -24,7 +24,11 @@ export const sampleUnit:IUnit = {
     url: "",
     videoUrl: "",
     embedUrl: "",
-    imgH: 0
+    imgH: 0,
+}
+interface IOfficialPage {
+    pageName: string;
+    officialPage: string;
 }
 export interface IWorkConfig {
     title:ILanguage;
@@ -34,6 +38,7 @@ export interface IWorkConfig {
     category: ILanguage;
     blogs: IBlog[];
     tags: string[];
+    officialPages: IOfficialPage[];
 }
 export const sampleWorkConfig: IWorkConfig = {
     title: { es: "", en: "" },
@@ -42,7 +47,8 @@ export const sampleWorkConfig: IWorkConfig = {
     id: '',
     category: { es: "", en: "" },
     blogs: [],
-    tags:[]
+    tags:[],
+    officialPages: []
 }
 export const workConfigs: IWorkConfig[] = [
     sampleProject
