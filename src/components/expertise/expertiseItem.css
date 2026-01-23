@@ -4,14 +4,14 @@
   background: var(--expertise-item-img, auto);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 110%;
   display: grid;
   grid-template-rows: 10% 80% 10%;
   justify-items: center;
+  transition: background-size 0.4s ease-in-out;
 }
 .expertise-item:hover {
-  background-size: 120%;
-  transition: 0.3s;
+  background-size: 150%;
 }
 .expertise-item h3 {
   color: #ffffff;
@@ -60,6 +60,20 @@
     animation-duration: 40s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+  }
+}
+@media screen and (max-width: 800px) {
+  .expertise-item {
+    border: 1px solid #898989;
+    cursor: pointer;
+    background: var(--expertise-item-img, auto);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    justify-items: center;
+    transition: background-size 0.4s ease-in-out;
   }
 }
 @keyframes slide {

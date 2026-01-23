@@ -18,7 +18,7 @@ export const Expertise = () => {
         }
     },[divRef, expertiseOption])
   return (
-    <section className='expertise-container'>
+    <section className='expertise-container' id='expertise'>
         <h1>{t('my-expertise')}</h1>
         <div className='expertise-cont-body'>
             {(!isMobile && !expertiseOption) && <div className='expertise-body'>

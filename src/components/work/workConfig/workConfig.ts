@@ -33,6 +33,7 @@ export interface IWorkConfig {
     id:string;
     category: ILanguage;
     blogs: IBlog[];
+    tags: string[];
 }
 export const sampleWorkConfig: IWorkConfig = {
     title: { es: "", en: "" },
@@ -40,7 +41,8 @@ export const sampleWorkConfig: IWorkConfig = {
     size: 'small',
     id: '',
     category: { es: "", en: "" },
-    blogs: []
+    blogs: [],
+    tags:[]
 }
 export const workConfigs: IWorkConfig[] = [
     sampleProject

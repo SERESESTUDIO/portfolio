@@ -6,6 +6,7 @@ export const sampleProject: IWorkConfig = {
   size: "large",
   id: "TrainAdventure",
   category: { en: "Web-Development", es: "Desarrollo-Web" },
+  tags:["Javascript", "Javascript", "Javascript", "Javascript", "Javascript", "Javascript","Javascript", "Javascript"],
   blogs: [
     {
       units: [

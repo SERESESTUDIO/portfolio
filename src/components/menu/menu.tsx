@@ -12,26 +12,55 @@ import './menu.css';
 export const Menu = ({route=""}) => {
   const [openLanguagePanel, setOpenLanguagePanel] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  const [actualRoute, setActualRoute] = useState(route);
   const { t, i18n } = useTranslation();
   const { isMobile } = useCheckMobile();
   const { isOnTop } = useCheckScroll();
+  useEffect(()=>{
+    navigate(actualRoute);
+  },[actualRoute]);
+  const navigate = (route:string) => {
+    const element = document.getElementById(route);
+        
+        if (element) {
+          // 1. Obtenemos la distancia del elemento al tope del viewport
+          const elementPosition = element.getBoundingClientRect().top;
+        
+          // 2. Obtenemos cuánto scroll ya se ha hecho
+          const offsetPosition = elementPosition + window.pageYOffset;
+        
+          // 3. Restamos unos 100px (o la altura de tu menu) para que quede "centrado" arriba
+          let finalPosition = offsetPosition - ((route === "experience") ? 100 : 100);
+          if(route === "contact") finalPosition = document.documentElement.scrollHeight + 1000;
+          window.scrollTo({
+            top: finalPosition,
+            behavior: 'smooth'
+          });
+        }
+  }
   useEffect(()=>{
     if(!isOnTop && openMobileMenu){
       setOpenMobileMenu(false);
     }
   },[isOnTop]);
+  const changeLink = (event:any, link:string)=>{
+    let newRoute = (link === '/') ? "home": link;
+    event.preventDefault();
+    window.history.pushState({}, '', link);
+    setActualRoute(newRoute);
+  }
   return (
     <>
       {(!isMobile) && <div className={'menu-container'}>
         <div>
           <a href='/' className='menu-logo'><LogoIcon/></a>
         </div>
-        <div className='menu-buttons'>
-          <a href='/home' className={route === 'home' ? 'active' : 'inactive'}>{t('home')}</a>
-          <a href='/expertise' className={route === 'expertise' ? 'active' : 'inactive'}>{t('expertise')}</a>
-          <a href='/work' className={route === 'work' ? 'active' : 'inactive'}>{t('work')}</a>
-          <a href='/experience' className={route === 'experience' ? 'active' : 'inactive'}>{t('expirience')}</a>
-          <a href='/contact' className={route === 'contact' ? 'active' : 'inactive'}>{t('contact')}</a>
+        <div className='menu-buttons' id='home'>
+          <a onClick={(e)=>changeLink(e, '/')} className={actualRoute === 'home' ? 'active' : 'inactive'}>{t('home')}</a>
+          <a onClick={(e)=>changeLink(e, 'expertise')} className={actualRoute === 'expertise' ? 'active' : 'inactive'}>{t('expertise')}</a>
+          <a onClick={(e)=>changeLink(e, 'work')} className={actualRoute === 'work' ? 'active' : 'inactive'}>{t('work')}</a>
+          <a onClick={(e)=>changeLink(e, 'experience')} className={actualRoute === 'experience' ? 'active' : 'inactive'}>{t('expirience')}</a>
+          <a onClick={(e)=>changeLink(e, 'contact')} className={actualRoute === 'contact' ? 'active' : 'inactive'}>{t('contact')}</a>
         </div>
         <div>
           <div className='menu-language' onClick={()=>setOpenLanguagePanel(true)} onPointerLeave={()=>setOpenLanguagePanel(false)}>
@@ -44,11 +73,11 @@ export const Menu = ({route=""}) => {
       {(!isMobile && !isOnTop) && <div className='menu-float'>
         <div></div>
         <div className='menu-buttons-float'>
-          <a href='/home' className={route === 'home' ? 'active' : 'inactive'}>{t('home')}</a>
-          <a href='/expertise' className={route === 'expertise' ? 'active' : 'inactive'}>{t('expertise')}</a>
-          <a href='/work' className={route === 'work' ? 'active' : 'inactive'}>{t('work')}</a>
-          <a href='/experience' className={route === 'experience' ? 'active' : 'inactive'}>{t('expirience')}</a>
-          <a href='/contact' className={route === 'contact' ? 'active' : 'inactive'}>{t('contact')}</a>
+          <a onClick={(e)=>changeLink(e, '/')} className={actualRoute === 'home' ? 'active' : 'inactive'}>{t('home')}</a>
+          <a onClick={(e)=>changeLink(e, 'expertise')} className={actualRoute === 'expertise' ? 'active' : 'inactive'}>{t('expertise')}</a>
+          <a onClick={(e)=>changeLink(e, 'work')} className={actualRoute === 'work' ? 'active' : 'inactive'}>{t('work')}</a>
+          <a onClick={(e)=>changeLink(e, 'experience')} className={actualRoute === 'experience' ? 'active' : 'inactive'}>{t('expirience')}</a>
+          <a onClick={(e)=>changeLink(e, 'contact')} className={actualRoute === 'contact' ? 'active' : 'inactive'}>{t('contact')}</a>
         </div>
         <div></div>
       </div>}
@@ -69,11 +98,11 @@ export const Menu = ({route=""}) => {
         </div>
       </div>}
       {(isMobile && openMobileMenu && isOnTop) && <div className='mobile-menu-container'>
-        <a href='/home' className={route === 'home' ? 'active' : 'inactive'}>{t('home')}</a>
-        <a href='/expertise' className={route === 'expertise' ? 'active' : 'inactive'}>{t('expertise')}</a>
-        <a href='/work' className={route === 'work' ? 'active' : 'inactive'}>{t('work')}</a>
-        <a href='/experience' className={route === 'experience' ? 'active' : 'inactive'}>{t('expirience')}</a>
-        <a href='/contact' className={route === 'contact' ? 'active' : 'inactive'}>{t('contact')}</a>
+        <a onClick={(e)=>changeLink(e, '/')} className={route === 'home' ? 'active' : 'inactive'}>{t('home')}</a>
+        <a onClick={(e)=>changeLink(e, 'expertise')} className={route === 'expertise' ? 'active' : 'inactive'}>{t('expertise')}</a>
+        <a onClick={(e)=>changeLink(e, 'work')} className={route === 'work' ? 'active' : 'inactive'}>{t('work')}</a>
+        <a onClick={(e)=>changeLink(e, 'experience')} className={route === 'experience' ? 'active' : 'inactive'}>{t('expirience')}</a>
+        <a onClick={(e)=>changeLink(e, 'contact')} className={route === 'contact' ? 'active' : 'inactive'}>{t('contact')}</a>
       </div>}
     </>
   )

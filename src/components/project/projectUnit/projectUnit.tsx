@@ -3,7 +3,8 @@ import { sampleUnit } from "../../work/workConfig/workConfig";
 import './projectUnit.css';
 import { useEffect, useRef, useState } from "react";
 
-export const ProjectUnit = ({unit=sampleUnit}) => {
+const emptyFunc = (data:any)=>{console.log(data)}
+export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
     const [title, setTitle] = useState<string>("");
     const [property, setProperty] = useState<string>("");
     const [legend, setLegend] = useState<string>("");
@@ -67,7 +68,7 @@ export const ProjectUnit = ({unit=sampleUnit}) => {
     <div className="unit">
         {(title != "") && <div className="unit-title"><h3>{title}</h3><label>{property}</label></div>}
         {(legend != "") && <span>{legend}</span>}
-        {(url != "") && <div className="unit-img" ref={divRef}></div>}
+        {(url != "") && <div className="unit-img" ref={divRef} onClick={()=>onImgPress(url)}></div>}
         {(video != "") && <video src={video} controls ref={vidRef}/>}
         {(embed != "") && <iframe src={embed} allowFullScreen ref={embRef}/>}
         {(paragraphs.length > 0) && paragraphs.map((paragraph, index)=><p key={index}>{paragraph}</p>)}

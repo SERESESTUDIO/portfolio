@@ -8,7 +8,7 @@ import { MapIcon } from '../../icons/mapIcon';
 export const Footer = () => {
     const { t } = useTranslation();
   return (
-    <section className='footer-container'>
+    <section className='footer-container' id='contact'>
         <div className='footer-summary'>
             <h3>{t('proffesional-summary')}</h3>
             <label>{t('footer-tags')}</label>

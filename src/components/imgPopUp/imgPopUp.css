@@ -1,0 +1,30 @@
+.img-popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    display: grid;
+    z-index: 50;
+}
+.img-popup button {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-family: 'bold';
+    font-size: 14pt;
+    cursor: pointer;
+}
+.img-popup button:hover {
+    opacity: 0.8;
+}
+.img-popup-img {
+    object-fit: cover;
+    justify-self: center;
+}
