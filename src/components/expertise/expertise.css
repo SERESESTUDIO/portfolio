@@ -22,6 +22,7 @@
 }
 .expertise-section-down {
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
 }
 .expertise-detail {
@@ -62,6 +63,7 @@
   color: #ffffff;
   display: grid;
   grid-template-rows: 10% auto auto;
+  align-items: start;
 }
 .expertise-detail-container div {
   display: flex;

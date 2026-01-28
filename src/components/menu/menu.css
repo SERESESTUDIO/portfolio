@@ -40,6 +40,8 @@
   background-color: #11131596;
   backdrop-filter: blur(10px);
   z-index: 10;
+  animation: smoothAnim;
+  animation-duration: 0.5s;
 }
 .menu-buttons-float {
   width: 100%;
@@ -137,5 +139,15 @@
     margin-left: calc(50vw - 400px);
     display: grid;
     grid-template-columns: 100px 600px auto;
+  }
+}
+@keyframes smoothAnim {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

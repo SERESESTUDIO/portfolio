@@ -7,8 +7,8 @@ export const useCheckMobile = () => {
       window.addEventListener('resize', ()=>checkIfIsMobile());
     },[]);
     const checkIfIsMobile = () =>{
-      const isMobile = window.matchMedia("(any-pointer:coarse)").matches;
-      setIsMobile((window.innerWidth < 800 || isMobile) ? true : false);
+      //const isMobile = window.matchMedia("(any-pointer:coarse)").matches;
+      setIsMobile((window.innerWidth < 800 /*|| isMobile*/) ? true : false);
     };
   return {
     isMobile

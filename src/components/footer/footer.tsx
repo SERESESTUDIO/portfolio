@@ -23,60 +23,58 @@ export const Footer = () => {
             <div className='footer-list-body'>
                 <div>
                     <span>C#</span>
+                    <span>.Net-core</span>
                     <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
+                    <span>Typescript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>GDScript</span>
+                    <span>PHP</span>
+                    <span>Node-js</span>
+                    <span>Express-js</span>
+                    <span>React-js</span>
+                    <span>Sequelize</span>
+                    <span>Three-js</span>
+                    <span>Phaser-js</span>
+                    <span>PostgresQL</span>
+                    <span>MySQL</span>
+                    <span>MongoDB</span>
                 </div>
                 <div>
-                    <span>C#</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
+                    <span>Tailwind</span>
+                    <span>Photoshop</span>
+                    <span>Illustrator</span>
+                    <span>After-effetcs</span>
+                    <span>Premiere-pro</span>
+                    <span>Maya3D</span>
+                    <span>Blender</span>
+                    <span>Moho</span>
+                    <span>Krita</span>
+                    <span>Unity</span>
+                    <span>Rogue-engine</span>
+                    <span>Godot</span>
+                    <span>Reazon</span>
+                    <span>Cubase</span>
+                    <span>FMOD</span>
+                    <span>Docs</span>
+                    <span>Excel</span>
                 </div>
                 <div>
-                    <span>C#</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
-                    <span>Javascript</span>
+                    <span>Sketchup</span>
+                    <span>Jira</span>
+                    <span>Trello</span>
+                    <span>Git</span>
+                    <span>Github</span>
+                    <span>AWS</span>
+                    <span>Digital-Ocean</span>
+                    <span>Jenkins</span>
+                    <span>IA-Studio</span>
+                    <span>Copilot</span>
+                    <span>Eleven-labs</span>
+                    <span>Windows</span>
+                    <span>Linux</span>
+                    <span>Mac-Ios</span>
+                    <span>Android</span>
                 </div>
             </div>
         </div>

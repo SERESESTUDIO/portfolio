@@ -32,7 +32,7 @@ export const expertiseOptions:IExpertiseOption[] = [
             en: "Development of robust and scalable servers and APIs using Node.js, Express, and SQL and NoSQL databases."
         },
         Url: "/img/backend.png",
-        Tags: ["Node", "Express", "Sequelize", "MongoDB", "PostgreSQL"]
+        Tags: ["Node", "Express", "Sequelize", "MongoDB", "PostgreSQL", ".Net core", "PHP"]
     },
     {
         Title: {
@@ -56,7 +56,7 @@ export const expertiseOptions:IExpertiseOption[] = [
             en: "Video game development using Unity and C#, creating immersive and engaging experiences for various platforms."
         },
         Url: "/img/videogames.png",
-        Tags: ["Unity", "C#", "GameDesign"]
+        Tags: ["Unity", "C#", "Phaser", "Three-js", "Javascript", "Typescript", "Godot", "GDScript", "GameDesign", "Reason", "Cubase", "FMOD"]
     },
     {
         Title: {
@@ -68,7 +68,7 @@ export const expertiseOptions:IExpertiseOption[] = [
             en: "Implementation and management of cloud solutions using services like AWS and Digital Ocean for scalability and efficiency."
         },
         Url: "/img/cloud.png",
-        Tags: ["AWS", "Digital Ocean", "Docker", "Jenkins"]
+        Tags: ["AWS", "Digital Ocean", "Docker", "Jenkins", "Git", "Github", "Jira"]
     },
     {
         Title: {
@@ -80,6 +80,6 @@ export const expertiseOptions:IExpertiseOption[] = [
             en: "Creation of 3D models, textures, and concept art using tools like Blender, Maya, and Photoshop."
         },
         Url: "/img/art.png",
-        Tags: ["Blender", "Maya", "Photoshop", "Illustrator"]
+        Tags: ["Photoshop", "Krita", "Moho", "Premiere", "after-effects", "Illustrator", "Maya", "Blender", "Sketchup"]
     }
 ]
