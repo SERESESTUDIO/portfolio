@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { sampleUnit } from "../../work/workConfig/workConfig";
+import { Carousel } from 'react-responsive-carousel';
 import './projectUnit.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect, useRef, useState } from "react";
+import { useCheckMobile } from "../../../utils/useCheckMobile";
 
 const emptyFunc = (data:any)=>{console.log(data)}
 export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
@@ -12,8 +15,10 @@ export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
     const [video, setVideo] = useState<string>("");
     const [embed, setEmbed] = useState<string>("");
     const { i18n } = useTranslation();
+    const {isMobile} = useCheckMobile();
     const divRef = useRef(null);
     const vidRef = useRef(null);
+    const carouselRef = useRef(null);
     const embRef = useRef(null);
     useEffect(()=>{
         if(divRef.current) {
@@ -34,6 +39,12 @@ export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
             vid.style.setProperty("--unit-embed-height", `${unit.imgH}px`);
         }
     },[embed, embRef]);
+    useEffect(()=>{
+        if(carouselRef.current) {
+            const divRef:HTMLDivElement = carouselRef.current;
+            divRef.style.setProperty("--carousel-height", `${500}px`);
+        }
+    },[carouselRef])
     useEffect(()=>{
         if(i18n.language) {
             setUrl(unit.url);
@@ -71,6 +82,11 @@ export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
             </li>)}    
         </ul>}
         </div>)}
+        {(unit.carousel) && <div className="carousel" ref={carouselRef}><Carousel width={"100%"} infiniteLoop axis="horizontal" showThumbs={!isMobile} thumbWidth={50}>
+            {unit.carousel.map((item, index)=><div key={index}>
+                <img src={item} />
+            </div>)}
+        </Carousel></div>}
     </div>
   )
 }

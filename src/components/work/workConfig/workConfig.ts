@@ -16,6 +16,7 @@ export interface IUnit {
     videoUrl: string;
     embedUrl: string;
     imgH: number;
+    carousel?: string[];
 }
 export interface IBlog {
     units:IUnit[];

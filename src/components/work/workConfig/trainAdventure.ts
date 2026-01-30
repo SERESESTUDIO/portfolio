@@ -295,11 +295,12 @@ export const TrainAdventure: IWorkConfig = {
             es: "Leyenda de las imagenes",
             en: "",
           },
-          url: "/test_img/01.png",
+          url: "",
           videoUrl: "",
           embedUrl: "",
           imgH: 400,
           paragraph: [],
+          carousel: ["/test_img/01.png", "/test_img/01.png", "/test_img/01.png", "/test_img/01.png"]
         },
       ],
     },

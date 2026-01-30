@@ -1,11 +1,11 @@
 .p {
-  font-family: 'regular';
+  font-family: "regular";
   font-size: 12pt;
   line-height: 20px;
   margin-bottom: 20px;
 }
 .p span {
-  font-family: 'regular';
+  font-family: "regular";
   font-size: 12pt;
   line-height: 20px;
 }
@@ -49,14 +49,6 @@
   font-size: 10pt;
   color: #ffffff;
 }
-.unit ul {
-  display: grid;
-  grid-auto-flow: row;
-  align-content: start;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  gap: 0px;
-}
 .list-p span {
   color: #ffffff;
 }
@@ -84,10 +76,18 @@
   width: 100%;
   height: var(--unit-embed-height, auto);
 }
+.carousel {
+  height: var(--carousel-height, auto);
+  margin-bottom: 100px;
+}
 @media screen and (max-width: 800px) {
   .unit {
     width: 100%;
     display: grid;
     align-content: start;
+  }
+  .carousel {
+    height: var(--carousel-height, auto);
+    margin-bottom: 10px;
   }
 }
