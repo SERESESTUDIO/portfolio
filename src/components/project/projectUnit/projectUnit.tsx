@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { sampleUnit, type IParagraph } from "../../work/workConfig/workConfig";
+import { sampleUnit } from "../../work/workConfig/workConfig";
 import './projectUnit.css';
 import { useEffect, useRef, useState } from "react";
 
