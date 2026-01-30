@@ -5,6 +5,7 @@ import { ProjectUnit } from './projectUnit/projectUnit';
 import { useTranslation } from 'react-i18next';
 import { ImgPopUp } from '../imgPopUp/imgPopUp';
 import './project.css';
+import { Footer } from '../footer/footer';
 
 export const Project = () => {
     const [config, setConfig] = useState<IWorkConfig | null>(null);
@@ -49,6 +50,7 @@ export const Project = () => {
             </div>
         </div>
         {(img != "") && <ImgPopUp url={img} onClose={()=>setImg("")}/>}
+        <Footer />
     </>
   )
 }

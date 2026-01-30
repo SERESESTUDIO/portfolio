@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { sampleUnit } from "../../work/workConfig/workConfig";
+import { sampleUnit, type IParagraph } from "../../work/workConfig/workConfig";
 import './projectUnit.css';
 import { useEffect, useRef, useState } from "react";
 
@@ -11,7 +11,6 @@ export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
     const [url, setUrl] = useState<string>("");
     const [video, setVideo] = useState<string>("");
     const [embed, setEmbed] = useState<string>("");
-    const [paragraphs, setParagraphs] = useState<string[]>([]);
     const { i18n } = useTranslation();
     const divRef = useRef(null);
     const vidRef = useRef(null);
@@ -45,33 +44,33 @@ export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
                     setTitle(unit.title.es);
                     setProperty(unit.property.es);
                     setLegend(unit.legend.es);
-                    const txtArr:string[] = [];
-                    unit.paragraph.map(txt=>{
-                        txtArr.push(txt.es);    
-                    });
-                    setParagraphs(txtArr);
                     break;
                 case "en":
                     setTitle(unit.title.en);
                     setProperty(unit.property.en);
                     setLegend(unit.legend.en);
-                    const txtArrEn:string[] = [];
-                    unit.paragraph.map(txt=>{
-                        txtArrEn.push(txt.en);    
-                    });
-                    setParagraphs(txtArrEn);
                     break;
             }
         }
     },[i18n.language]);
   return (
     <div className="unit">
-        {(title != "") && <div className="unit-title"><h3>{title}</h3><label>{property}</label></div>}
-        {(legend != "") && <span>{legend}</span>}
+        {<div className="unit-title"><h3>{title}</h3><label>{property}</label></div>}
+        {(legend != "") && <b>{legend}</b>}
         {(url != "") && <div className="unit-img" ref={divRef} onClick={()=>onImgPress(url)}></div>}
         {(video != "") && <video src={video} controls ref={vidRef}/>}
         {(embed != "") && <iframe src={embed} allowFullScreen ref={embRef}/>}
-        {(paragraphs.length > 0) && paragraphs.map((paragraph, index)=><p key={index}>{paragraph}</p>)}
+        {(unit.paragraph.length > 0) && unit.paragraph.map((paragraph, index)=><div className="p" key={index}>{(i18n.language === "es") ? paragraph.text.es : paragraph.text.en}
+            {(paragraph.list.length > 0) && <ul>
+            {paragraph.list.map((item, index)=><li key={index}>
+                <div className="list-p p">
+                  <span style={{ fontWeight: 'bold' }}>{(i18n.language === "es") ? item.title.es : item.title.en}</span> 
+                  {' '} 
+                  <span>{(i18n.language === "es") ? item.paragraph.es : item.paragraph.en}</span>
+                </div>
+            </li>)}    
+        </ul>}
+        </div>)}
     </div>
   )
 }

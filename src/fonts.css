@@ -23,6 +23,11 @@ h3 {
   font-size: 14pt;
   line-height: 14px;
 }
+h4 {
+  font-family: "bold";
+  font-size: 10pt;
+  line-height: 10px;
+}
 h6 {
   font-family: "regular";
   font-size: 10pt;
@@ -41,6 +46,11 @@ p {
   }
   h3 {
     font-family: "bold";
+    font-size: 12pt;
+    line-height: 12px;
+  }
+  h4 {
+    font-family: "bold";
     font-size: 10pt;
     line-height: 10px;
   }
@@ -50,8 +60,8 @@ p {
     line-height: 8px;
   }
   p {
-  font-family: "regular";
-  font-size: 10pt;
-  line-height: 20px;
-}
+    font-family: "regular";
+    font-size: 10pt;
+    line-height: 20px;
+  }
 }

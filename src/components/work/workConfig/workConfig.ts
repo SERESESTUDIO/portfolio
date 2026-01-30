@@ -1,13 +1,17 @@
-import { sampleProject } from "./sample";
+import { TrainAdventure } from "./trainAdventure";
 interface ILanguage {
     es: string;
     en: string;
+}
+export interface IParagraph {
+    text: ILanguage;
+    list: IList[]
 }
 export interface IUnit {
     title: ILanguage;
     legend: ILanguage;
     property: ILanguage;
-    paragraph: ILanguage[];
+    paragraph: IParagraph[];
     url: string;
     videoUrl: string;
     embedUrl: string;
@@ -15,6 +19,10 @@ export interface IUnit {
 }
 export interface IBlog {
     units:IUnit[];
+}
+export interface IList {
+    title: ILanguage;
+    paragraph: ILanguage;
 }
 export const sampleUnit:IUnit = {
     title: {es:"", en: ""},
@@ -51,5 +59,5 @@ export const sampleWorkConfig: IWorkConfig = {
     officialPages: []
 }
 export const workConfigs: IWorkConfig[] = [
-    sampleProject
+    TrainAdventure
 ];
