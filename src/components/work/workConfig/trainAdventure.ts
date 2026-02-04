@@ -296,11 +296,11 @@ export const TrainAdventure: IWorkConfig = {
     {
       units: [
         {
-          title: { es: "Carrucel de imagenes", en: "Image Carousel" },
+          title: { es: "Capturas del proyecto", en: "Project previews" },
           property: { es: "", en: "" },
           legend: {
-            es: "Leyenda de las imagenes",
-            en: "Image caption",
+            es: "Captura de diferentes secciones del juego",
+            en: "Preview of different sections of the game",
           },
           url: "",
           videoUrl: "",
