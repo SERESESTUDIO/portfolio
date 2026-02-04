@@ -10,8 +10,12 @@ import { Footer } from '../footer/footer';
 export const Project = () => {
     const [config, setConfig] = useState<IWorkConfig | null>(null);
     const [img, setImg] = useState<string>("");
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     useEffect(()=>{
+        const savedLanguage = window.localStorage.getItem('language');
+        if(savedLanguage && savedLanguage !== i18n.language){
+          i18n.changeLanguage(savedLanguage);
+        }
         const project_id:string = window.location.href.split('/').reverse()[0];
         if(project_id) {
             const workConfig:IWorkConfig = workConfigs.filter(conf=>conf.id === project_id)[0];

@@ -75,6 +75,7 @@ export const Footer = () => {
                     <span>Linux</span>
                     <span>Mac-Ios</span>
                     <span>Android</span>
+                    <span>Figma</span>
                 </div>
             </div>
         </div>

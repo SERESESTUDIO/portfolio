@@ -25,6 +25,7 @@
     opacity: 0.8;
 }
 .img-popup-img {
+    height: 100vh;
     object-fit: cover;
     justify-self: center;
 }
