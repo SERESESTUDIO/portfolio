@@ -4,7 +4,6 @@ import { Carousel } from 'react-responsive-carousel';
 import './projectUnit.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useEffect, useRef, useState } from "react";
-import { useCheckMobile } from "../../../utils/useCheckMobile";
 
 const emptyFunc = (data:any)=>{console.log(data)}
 export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
@@ -15,7 +14,6 @@ export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
     const [video, setVideo] = useState<string>("");
     const [embed, setEmbed] = useState<string>("");
     const { i18n } = useTranslation();
-    const {isMobile} = useCheckMobile();
     const divRef = useRef(null);
     const vidRef = useRef(null);
     const carouselRef = useRef(null);
