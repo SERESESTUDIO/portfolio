@@ -88,6 +88,11 @@
   }
   .carousel {
     height: var(--carousel-height, auto);
+    width: 50px;
     margin-bottom: 10px;
+  }
+  .thumbs-wrapper {
+    width: 100px;
+    overflow-x: auto;
   }
 }

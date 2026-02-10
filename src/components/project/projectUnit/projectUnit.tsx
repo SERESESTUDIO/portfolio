@@ -82,7 +82,7 @@ export const ProjectUnit = ({unit=sampleUnit, onImgPress=emptyFunc}) => {
             </li>)}    
         </ul>}
         </div>)}
-        {(unit.carousel) && <div className="carousel" ref={carouselRef}><Carousel width={"100%"} infiniteLoop axis="horizontal" showThumbs={!isMobile} thumbWidth={50}>
+        {(unit.carousel) && <div className="carousel" ref={carouselRef}><Carousel width={"100%"} infiniteLoop axis="horizontal" showThumbs={false}>
             {unit.carousel.map((item, index)=><div key={index}>
                 <img src={item} />
             </div>)}

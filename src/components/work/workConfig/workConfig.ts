@@ -1,4 +1,5 @@
 import { TrainAdventure } from "./trainAdventure";
+import { TrainMeGames } from "./trainMeGames";
 interface ILanguage {
     es: string;
     en: string;
@@ -60,5 +61,6 @@ export const sampleWorkConfig: IWorkConfig = {
     officialPages: []
 }
 export const workConfigs: IWorkConfig[] = [
-    TrainAdventure
+    TrainAdventure,
+    TrainMeGames
 ];
